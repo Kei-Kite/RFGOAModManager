@@ -1,0 +1,43 @@
+<Controls:MetroWindow x:Class="RFGOAModManager.Views.InfoWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      Title="How to Use the Mod Manager"
+                      Height="500"
+                      Width="600"
+                      WindowStartupLocation="CenterOwner"
+                      ResizeMode="CanResize"
+                      GlowBrush="DodgerBlue"
+                      ShowTitleBar="True"
+                      ShowCloseButton="True"
+                      ShowMinButton="False"
+                      ShowMaxRestoreButton="False">
+
+    <ScrollViewer Padding="20">
+        <TextBlock TextWrapping="Wrap" FontSize="14" FontFamily="Segoe UI">
+            <Run Text="1. Import Mods:"/><LineBreak/>
+            <Run Text="Click the 'Import Mods' button to add mod files from your computer."/><LineBreak/>
+            <Run Text="Imported mods appear only in the 'Available Mods' library and are not yet applied to the game."/><LineBreak/>
+            <LineBreak/>
+            <Run Text="2. Select and Add Mods:"/><LineBreak/>
+            <Run Text="Choose mods from 'Available Mods' and click 'Add' to include them in the active list."/><LineBreak/>
+            <LineBreak/>
+            <Run Text="3. Change Load Order:"/><LineBreak/>
+            <Run Text="Reorder mods by dragging them or using the Up/Down buttons."/><LineBreak/>
+            <Run Text="The load order affects mod priority and can impact game behavior, so please read mod pages carefully for recommended orders."/><LineBreak/>
+            <LineBreak/>
+            <Run Text="4. Export Mods:"/><LineBreak/>
+            <Run Text="Click 'Export Mods' to apply the active load order to the game folder."/><LineBreak/>
+            <Run Text="Only exported mods will affect the game."/><LineBreak/>
+            <LineBreak/>
+            <Run Text="Note:"/><LineBreak/>
+            <Run Text="If any mods in your active load order are not present in the 'Available Mods' library, they will still be shown but are considered unimported."/><LineBreak/>
+            <Run Text="These mods will be overwritten during export, so please import them to avoid losing changes."/><LineBreak/>
+            <LineBreak/>
+            <Run Text="Tip:"/><LineBreak/>
+            <Run Text="You can save/load presets for quick switching between load orders."/><LineBreak/>
+            <Run Text="After loading a preset, remember to export mods again for changes to take effect."/><LineBreak/>
+            <Run Text="Use the 'Config' button to change your Steam mods folder if needed."/>
+        </TextBlock>
+    </ScrollViewer>
+</Controls:MetroWindow>
